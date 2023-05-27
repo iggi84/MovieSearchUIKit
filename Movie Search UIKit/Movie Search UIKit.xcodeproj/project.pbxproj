@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BC947D72A22AF0900B4E2B9 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC947D62A22AF0900B4E2B9 /* AppConfig.swift */; };
 		8BFFF0652A22606000B6B2D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFF0642A22606000B6B2D0 /* AppDelegate.swift */; };
 		8BFFF0672A22606000B6B2D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFF0662A22606000B6B2D0 /* SceneDelegate.swift */; };
 		8BFFF0692A22606000B6B2D0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFF0682A22606000B6B2D0 /* MainVC.swift */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8BFFF0612A22606000B6B2D0 /* Movie Search UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Search UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC947D62A22AF0900B4E2B9 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		8BFFF0612A22606000B6B2D0 /* Movie Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFFF0642A22606000B6B2D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BFFF0662A22606000B6B2D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8BFFF0682A22606000B6B2D0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -24,6 +26,7 @@
 		8BFFF06D2A22606100B6B2D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BFFF0702A22606100B6B2D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BFFF0722A22606100B6B2D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BFFF0882A22A09F00B6B2D0 /* AppConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +51,7 @@
 		8BFFF0622A22606000B6B2D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BFFF0612A22606000B6B2D0 /* Movie Search UIKit.app */,
+				8BFFF0612A22606000B6B2D0 /* Movie Search.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +76,7 @@
 				8BFFF06D2A22606100B6B2D0 /* Assets.xcassets */,
 				8BFFF06F2A22606100B6B2D0 /* LaunchScreen.storyboard */,
 				8BFFF0722A22606100B6B2D0 /* Info.plist */,
+				8BFFF0882A22A09F00B6B2D0 /* AppConfig.xcconfig */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -111,6 +115,7 @@
 		8BFFF0872A22A00800B6B2D0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8BC947D62A22AF0900B4E2B9 /* AppConfig.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -132,7 +137,7 @@
 			);
 			name = "Movie Search UIKit";
 			productName = "Movie Search UIKit";
-			productReference = 8BFFF0612A22606000B6B2D0 /* Movie Search UIKit.app */;
+			productReference = 8BFFF0612A22606000B6B2D0 /* Movie Search.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BFFF0692A22606000B6B2D0 /* MainVC.swift in Sources */,
+				8BC947D72A22AF0900B4E2B9 /* AppConfig.swift in Sources */,
 				8BFFF0652A22606000B6B2D0 /* AppDelegate.swift in Sources */,
 				8BFFF0672A22606000B6B2D0 /* SceneDelegate.swift in Sources */,
 			);
@@ -330,9 +336,11 @@
 		};
 		8BFFF0762A22606100B6B2D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFFF0882A22A09F00B6B2D0 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AppName = "Movie Search";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4F7AV38H34;
@@ -348,8 +356,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.Movie-Search-UIKit";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BundleIdentifier)";
+				PRODUCT_NAME = "$(AppName)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +366,7 @@
 		};
 		8BFFF0772A22606100B6B2D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFFF0882A22A09F00B6B2D0 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -376,8 +385,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.Movie-Search-UIKit";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BundleIdentifier)";
+				PRODUCT_NAME = "$(AppName)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

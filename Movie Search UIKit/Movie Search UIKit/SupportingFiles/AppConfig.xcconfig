@@ -1,0 +1,14 @@
+//
+//  AppConfig.xcconfig
+//  Movie Search UIKit
+//
+//  Created by Igor  Vojinovic on 27.5.23..
+//
+
+// App
+BundleIdentifier = personal.Movie-Search-UIKit
+AppIcon = AppIcon
+AppName = Movie Search
+
+// Backend
+ServerAddress = https:/$()/api.themoviedb.org/3/
